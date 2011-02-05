@@ -1,0 +1,7 @@
+#!/bin/sh
+# usage: sonar <host or ip address>
+while :
+do
+  ping -c 1 $1 && say "PING!" && growlnotify -m "Now pinging $1" PING
+  sleep 5 
+done
